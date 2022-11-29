@@ -1,0 +1,265 @@
+:root {
+  --basic-font: Anton, sans-serif;
+}
+
+/* FONTS */
+
+/* anton-regular - latin */
+@font-face {
+  font-family: "Anton";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/anton-v23-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/anton-v23-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* open-sans-regular - latin */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/open-sans-v34-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/open-sans-v34-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* GLOBAL */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: 1220px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.header {
+  padding-top: 57px;
+  padding-bottom: 300px;
+  background-image: url(../images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 190px;
+}
+
+.header-logo {
+  margin-right: 69px;
+}
+
+.header-logo:hover {
+  opacity: 0.8;
+}
+
+.header-logo:active {
+  opacity: 0.6;
+}
+
+.logo-img {
+  width: 31px;
+  height: 48px;
+}
+
+.sitenav {
+}
+
+.sitenav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.sitenav-item {
+}
+
+.sitenav-link {
+  color: #fff;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: var(--basic-font);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.sitenav-link:hover {
+    opacity: 0.8;
+}
+
+.sitenav-link:active {
+    opacity: 0.6;
+}
+
+.header-tel {
+  flex-grow: 1;
+  text-align: end;
+  font-family: var(--basic-font);
+  font-size: 17px;
+  letter-spacing: 0.1em;
+  color: #fff;
+}
+
+.header-tel:hover {
+    opacity: 0.8;
+}
+
+.header-tel:active {
+    opacity: 0.6;
+}
+
+.header-info {
+    color: #fff;
+    font-family: var(--basic-font);
+    text-transform: uppercase;
+}
+
+.header-text {
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+}
+.header-title {
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 151px;
+    margin-top: 0;
+    margin-bottom: 19px;
+}
+
+.header-btn {
+    display: inline-block;
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.1em;
+    padding: 18px 30px;
+    border: 1px solid #fff;
+    transition: 0.4s;
+}
+
+.header-btn:hover {
+    border-color: transparent;
+    background-color: #fff;
+    color: #000;
+}
+
+/* MAIN */
+
+.main {
+}
+
+.hero-section {
+    padding-top: 100px;
+    padding-bottom: 114px;
+}
+
+.hero-container {
+}
+
+.hero-title {
+    font-family: var(--basic-font);
+    font-size: 50px;
+    line-height: 75px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 58px;
+}
+
+.hero-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.hero-item {
+    width: 564px;
+}
+
+.hero-item:nth-child(1) .hero-item__description{
+    margin-bottom: 113px;
+}
+
+.hero-item:nth-child(2) .hero-item__description{
+    margin-bottom: 60px;
+}
+
+.hero-item__title {
+    font-family: var(--basic-font);
+    font-size: 25px;
+    line-height: 37px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+}
+
+.hero-item__description {
+    text-align: justify;
+}
+
+.hero-item__images {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* FOOTER */
+
+.footer {
+    padding-bottom: 80px;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.footer-text {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.footer-text:not(:last-child) {
+    margin-right: 55px;
+}
