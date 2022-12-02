@@ -35,6 +35,7 @@
 
 html {
   height: 100%;
+  font-size: 62.5%; /* 10px */
 }
 
 body {
@@ -42,8 +43,8 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1.6rem; /* 16px */
+  line-height: 2.6rem; /* 2.6rem */
   font-weight: 400;
   color: #000;
 }
@@ -64,17 +65,19 @@ a {
 .container {
   width: 100%;
   max-width: 1220px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 2.5rem; /* 25px */
+  padding-right: 2.5rem; /* 25px */
   margin: 0 auto;
 }
 
 /* HEADER */
 
 .header {
-  padding-top: 57px;
-  padding-bottom: 300px;
+  height: 100vh;
+  padding-top: 5.7rem;
+  padding-bottom: 30rem;
   background-image: url(../images/header-bg.jpg);
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -84,11 +87,11 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 190px;
+  margin-bottom: 14rem;
 }
 
 .header-logo {
-  margin-right: 69px;
+  margin-right: 6.9rem;
 }
 
 .header-logo:hover {
@@ -100,8 +103,8 @@ a {
 }
 
 .logo-img {
-  width: 31px;
-  height: 48px;
+  width: 3.1rem;
+  height: 4.8rem;
 }
 
 .sitenav {
@@ -109,7 +112,7 @@ a {
 
 .sitenav-list {
   display: flex;
-  gap: 40px;
+  gap: 4rem;
 }
 
 .sitenav-item {
@@ -117,8 +120,8 @@ a {
 
 .sitenav-link {
   color: #fff;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
   font-family: var(--basic-font);
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -136,7 +139,7 @@ a {
   flex-grow: 1;
   text-align: end;
   font-family: var(--basic-font);
-  font-size: 17px;
+  font-size: 1.7rem;
   letter-spacing: 0.1em;
   color: #fff;
 }
@@ -156,26 +159,27 @@ a {
 }
 
 .header-text {
-    font-size: 30px;
-    line-height: 45px;
+    font-size: 2.8rem;
+    line-height: 4rem;
     letter-spacing: 0.1em;
     font-weight: 400;
 }
+
 .header-title {
     font-weight: 400;
-    font-size: 100px;
-    line-height: 151px;
+    font-size: 9rem;
+    line-height: 14rem;
     margin-top: 0;
-    margin-bottom: 19px;
+    margin-bottom: 1.9rem;
 }
 
 .header-btn {
     display: inline-block;
-    font-size: 17px;
+    font-size: 1.7rem;
     color: #fff;
     text-align: center;
     letter-spacing: 0.1em;
-    padding: 18px 30px;
+    padding: 1.8rem 3rem;
     border: 1px solid #fff;
     transition: 0.4s;
 }
@@ -192,8 +196,8 @@ a {
 }
 
 .hero-section {
-    padding-top: 100px;
-    padding-bottom: 114px;
+    padding-top: 10rem;
+    padding-bottom: 11.4rem;
 }
 
 .hero-container {
@@ -201,38 +205,39 @@ a {
 
 .hero-title {
     font-family: var(--basic-font);
-    font-size: 50px;
-    line-height: 75px;
+    font-size: 5rem;
+    line-height: 7.5rem;
     text-transform: uppercase;
     font-weight: 400;
-    margin-bottom: 58px;
+    margin-bottom: 5.8rem;
 }
 
 .hero-list {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 3rem;
 }
 
 .hero-item {
-    width: 564px;
+    max-width: 56.4rem;
 }
 
 .hero-item:nth-child(1) .hero-item__description{
-    margin-bottom: 113px;
+    margin-bottom: 11.3rem;
 }
 
 .hero-item:nth-child(2) .hero-item__description{
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
 }
 
 .hero-item__title {
     font-family: var(--basic-font);
-    font-size: 25px;
-    line-height: 37px;
+    font-size: 2.5rem;
+    line-height: 3.7rem;
     font-weight: 400;
     text-transform: uppercase;
-    margin-bottom: 19px;
+    margin-bottom: 1.9rem;
 }
 
 .hero-item__description {
@@ -242,13 +247,13 @@ a {
 .hero-item__images {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 3rem;
 }
 
 /* FOOTER */
 
 .footer {
-    padding-bottom: 80px;
+    padding-bottom: 8rem;
 }
 
 .footer-container {
@@ -256,10 +261,10 @@ a {
 }
 
 .footer-text {
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
 .footer-text:not(:last-child) {
-    margin-right: 55px;
+    margin-right: 5.5rem;
 }
